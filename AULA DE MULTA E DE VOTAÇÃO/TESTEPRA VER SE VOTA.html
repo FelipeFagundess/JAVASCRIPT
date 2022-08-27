@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOTAÇÃO</title>
+    <h1>TESTE DE VOTAÇÃO</h1>
+</head>
+<body>
+
+    COLOQUE SUA IDADE<input type="number" name="textnumb" id="textnumb">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="texto"></div>
+    <script>
+        function calcular(){
+        var textn = window.document.getElementById('textnumb')
+        var texto = window.document.getElementById('texto')
+        var val = Number(textn.value)
+        texto.innerHTML = `SUA IDADE É: ${val}`
+        if (val > 18 && val <65) {
+         texto.innerHTML += '<p>Você vota</p>'
+        }
+         else if (val >= 16 && val < 18) 
+         {
+         texto.innerHTML += '<p>voto opcional</p>'
+         }
+         else if (val >= 65) {
+         texto.innerHTML += '<p>voto opcional</p>'
+         }
+         if (val < 16)
+         {
+             texto.innerHTML += '}<p>nao vota</p>'
+         }
+         if  (val > 101) {
+             
+             texto.innerHTML +='[ERROR] UNDEFINED'
+        }
+
+    }
+       </script>
+    
+</body>
+</html>

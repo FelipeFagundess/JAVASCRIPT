@@ -1,0 +1,174 @@
+    @charset "UTF-8";
+    @font-face {
+        font-family:'FonteLogo';
+        src: url("../_fonts/bubblegum-sans-regular.otf");
+    }
+    body{
+        background-color: #838383;
+    }
+    p {
+        text-align: justify;
+        text-indent: 15px;
+    }
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    div#interface {
+    width: 990px;
+    background-color: white;
+    margin: -20px auto 10px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 90px 10px 120px 10px;
+    }
+    figure.ft-legnd {
+        position: relative;
+        width:  40%;
+        height: 40%;
+        border: 4px solid  white;
+        box-shadow: 2px 2px 5px rgb(255, 255, 255);
+
+    }
+    figure.ft-legnd img {
+        width: 220%;
+        height: 990%;
+    }
+    figure.ft-legnd figcaption {
+        opacity: 0;
+        position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.6);
+    color: white;
+    width: 210%;
+    height: 90%;
+    padding: 10px;
+    box-shadow: 1px 1px 1px #606060;
+    transition: opacity 1s;
+    }
+    figure.ft-legnd:hover figcaption {
+        opacity: 1;
+    }
+    /* foramatação do menu */
+    nav#menu {
+        display: block;
+    }
+    nav#menu ul {
+        list-style: none;
+        text-transform: uppercase;
+        position: absolute;
+        top: 0px;
+        left: 600px;
+        }
+        nav#menu li {
+            display: inline-block;
+            background-color: #ddddd;
+            padding: 10px;
+            margin: 2px;
+        }
+        nav#menu li:hover {
+            background-color: #606060;
+            transition: 2s;
+        }
+        nav#menu h1 {
+            display: none;
+        }
+        nav#menu a {
+            font-style: none;
+            color: black;
+            text-decoration: none;
+        }
+        nav#menu a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        header#cabecalho img#icone {
+            margin: 40px;
+            position: absolute;
+            left: 880px;
+            top: 40px;
+        }
+        header#cabecalho img#glasic {
+            position: absolute;
+            top: 125px;
+        }
+            header#cabecalho {
+                border-bottom: 2px #fb0000 solid;
+                height: 130px;
+                box-shadow: 1px 1px 0px rgba(0,0,0,.4);
+            }
+        header#cabecalho h1 {
+            position: absolute;
+            top: 25px;
+            font-family: 'FonteLogo' , sans-serif;
+            font-size: 30px;
+            color: #606060;
+            margin-bottom: 40px;
+        }
+        header#cabecalho h2 {
+            position: absolute;
+            top: 55px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #888888;
+            font-size: 
+        }
+        section#corpo {
+            display: block;
+            width: 450px;
+            float: left;
+            border-right: 1px solid #606060;
+            padding: 60px;
+        }
+        table#tabelaspec {
+            border: 3px solid #606060;
+            border-spacing: 0px;
+        text-align: center;
+        }
+        table#tabelaspec td {
+        border: 1px solid #606060;
+        text-align: center;
+        padding-top: 10%;
+        }
+        table#tabelaspec td.ce {
+            background-color: #757575;
+            color: white;
+            font-weight: bold;
+        }
+        table#tabelaspec td.cd {
+            background-color: #a4a1a1;
+            font-weight: bold;
+        }
+        table#tabelaspec caption {
+            color: #a4a1a1;
+            font-size: 10pt;
+        }
+        aside#lateral {
+            display: block;
+            margin-top: 0px;
+            width: 350px;
+            top: 10px;
+            float: right;
+            padding-left: 30px;
+        }
+        aside#lateral h1{
+            font-family: 'FonteLogo', sans-serif;
+        font-size: 20pt;
+
+    color: #606060;
+    }
+        aside#lateral h2{
+            background-color: #606060;
+            font-size: 15pt;
+            color: #ffffff;
+            padding: 15pt;
+
+        }
+        footer#rodape {
+            clear: both;
+            border-top: 1px solid #606060;
+        }
+        footer#rodape p {
+            text-align: center;
+        }
